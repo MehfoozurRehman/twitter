@@ -14,7 +14,8 @@ export default function DashboardNotificationsPage() {
           </div>
           <div>
             <p className="text-neutral-300 text-sm">
-              <strong className="text-neutral-100 font-bold">Next.js</strong> verified your account.
+              <strong className="text-neutral-100 font-bold">Next.js</strong>{" "}
+              verified your account.
             </p>
           </div>
         </div>
@@ -27,7 +28,10 @@ export default function DashboardNotificationsPage() {
           </div>
           <div>
             <p className="text-neutral-300 text-sm">
-              <strong className="text-neutral-100 font-bold">Sarah Jenkins</strong> and 42 others liked your post.
+              <strong className="text-neutral-100 font-bold">
+                Sarah Jenkins
+              </strong>{" "}
+              and 42 others liked your post.
             </p>
           </div>
         </div>

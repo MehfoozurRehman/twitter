@@ -6,7 +6,9 @@ export default function DashboardBookmarksPage() {
       </div>
 
       <div className="p-8 text-center flex flex-col items-center justify-center">
-        <h2 className="text-2xl font-extrabold text-neutral-100 mb-2">Save posts for later</h2>
+        <h2 className="text-2xl font-extrabold text-neutral-100 mb-2">
+          Save posts for later
+        </h2>
         <p className="text-neutral-500 text-sm max-w-sm">
           Bookmark posts to easily find them again in the future.
         </p>
