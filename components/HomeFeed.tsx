@@ -218,7 +218,7 @@ export default function HomeFeed() {
                   <span className="ml-2 text-neutral-500 font-sans text-[11px]">clean-architecture.ts</span>
                 </div>
                 <p className="text-purple-400">const <span className="text-blue-300">createCleanApp</span> = () =&gt; &#123;</p>
-                <p className="pl-4 text-emerald-400">// Less complexity, maximum clarity</p>
+                <p className="pl-4 text-emerald-400">{"// Less complexity, maximum clarity"}</p>
                 <p className="pl-4 text-neutral-200">return <span className="text-yellow-300">compose(simplicity, reliability)</span>;</p>
                 <p className="text-purple-400">&#125;;</p>
               </div>
