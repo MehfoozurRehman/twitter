@@ -10,27 +10,27 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col justify-between p-6 sm:p-12">
-      <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24 max-w-[1200px] mx-auto w-full">
+    <div className="min-h-screen bg-black text-white flex items-center justify-center p-6 sm:p-12">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24 max-w-[1000px] mx-auto w-full">
         <div className="flex items-center justify-center shrink-0">
-          <svg viewBox="0 0 24 24" className="w-20 h-20 sm:w-40 sm:h-40 lg:w-72 lg:h-72 fill-white">
+          <svg viewBox="0 0 24 24" className="w-20 h-20 sm:w-36 sm:h-36 lg:w-64 lg:h-64 fill-white">
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
           </svg>
         </div>
 
-        <div className="flex flex-col items-start max-w-[440px] w-full">
-          <h1 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-8 sm:mb-12">
+        <div className="flex flex-col items-start max-w-[400px] w-full">
+          <h1 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6 sm:mb-10">
             Happening now
           </h1>
 
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
             Join today.
           </h2>
 
-          <div className="w-full space-y-4">
+          <div className="w-full">
             <button
               onClick={handleGoogleSignIn}
-              className="w-full flex items-center justify-center gap-3 bg-white hover:bg-neutral-200 active:scale-[0.99] text-black font-semibold text-base py-3 px-6 rounded-full transition cursor-pointer shadow"
+              className="w-full flex items-center justify-center gap-3 bg-white hover:bg-neutral-200 active:scale-[0.99] text-black font-semibold text-base py-3.5 px-6 rounded-full transition cursor-pointer shadow"
             >
               <svg viewBox="0 0 24 24" className="w-5 h-5">
                 <path
@@ -52,34 +52,9 @@ export default function LoginPage() {
               </svg>
               <span>Sign in with Google</span>
             </button>
-
-            <p className="text-xs text-neutral-500 leading-relaxed px-1">
-              By signing up, you agree to the <span className="text-sky-500 hover:underline cursor-pointer">Terms of Service</span> and <span className="text-sky-500 hover:underline cursor-pointer">Privacy Policy</span>, including <span className="text-sky-500 hover:underline cursor-pointer">Cookie Use</span>.
-            </p>
           </div>
         </div>
       </div>
-
-      <footer className="text-xs text-neutral-500 flex flex-wrap justify-center gap-x-4 gap-y-2 py-4">
-        <span className="hover:underline cursor-pointer">About</span>
-        <span className="hover:underline cursor-pointer">Download the X app</span>
-        <span className="hover:underline cursor-pointer">Help Center</span>
-        <span className="hover:underline cursor-pointer">Terms of Service</span>
-        <span className="hover:underline cursor-pointer">Privacy Policy</span>
-        <span className="hover:underline cursor-pointer">Cookie Policy</span>
-        <span className="hover:underline cursor-pointer">Accessibility</span>
-        <span className="hover:underline cursor-pointer">Ads info</span>
-        <span className="hover:underline cursor-pointer">Blog</span>
-        <span className="hover:underline cursor-pointer">Careers</span>
-        <span className="hover:underline cursor-pointer">Brand Resources</span>
-        <span className="hover:underline cursor-pointer">Advertising</span>
-        <span className="hover:underline cursor-pointer">Marketing</span>
-        <span className="hover:underline cursor-pointer">X for Business</span>
-        <span className="hover:underline cursor-pointer">Developers</span>
-        <span className="hover:underline cursor-pointer">Directory</span>
-        <span className="hover:underline cursor-pointer">Settings</span>
-        <span>© 2026 X Corp.</span>
-      </footer>
     </div>
   );
 }

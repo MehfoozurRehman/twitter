@@ -299,15 +299,9 @@ export default function RightSidebar() {
         </div>
       </div>
 
-      <footer className="px-4 text-xs text-neutral-500 flex flex-wrap gap-x-3 gap-y-1 pb-8">
-        <a href="#" className="hover:underline">Terms of Service</a>
-        <a href="#" className="hover:underline">Privacy Policy</a>
-        <a href="#" className="hover:underline">Cookie Policy</a>
-        <a href="#" className="hover:underline">Accessibility</a>
-        <a href="#" className="hover:underline">Ads info</a>
-        <a href="#" className="hover:underline">More ···</a>
+      <div className="px-4 text-xs text-neutral-500 pb-8">
         <span>© 2026 X Corp.</span>
-      </footer>
+      </div>
     </aside>
   );
 }
