@@ -2,7 +2,7 @@ import "./globals.css";
 
 import { Geist, Geist_Mono } from "next/font/google";
 
-import AppShell from "@/components/AppShell";
+import AppShell from "@/components/app-shell";
 import GoogleAuthProvider from "@/context/google";
 import type { Metadata } from "next";
 

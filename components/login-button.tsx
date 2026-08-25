@@ -11,11 +11,11 @@ export default function LoginButton() {
     <GoogleLogin
       shape="circle"
       onSuccess={(credentialResponse) => {
-        console.log(credentialResponse);
-
-        const googleAuthValues = jwtDecode(credentialResponse.credential!);
-
-        console.log(googleAuthValues);
+        if (credentialResponse.credential) {
+          const googleAuthValues = jwtDecode(credentialResponse.credential);
+          console.log(googleAuthValues);
+          router.push("/dashboard");
+        }
       }}
       onError={() => {
         console.log("Login Failed");

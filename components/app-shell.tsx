@@ -1,9 +1,9 @@
 "use client";
 
-import MobileNav from "./MobileNav";
-import PostPopup from "./PostPopup";
-import RightSidebar from "./RightSidebar";
-import Sidebar from "./Sidebar";
+import MobileNav from "./mobile-nav";
+import PostPopup from "./post-popup";
+import RightSidebar from "./right-sidebar";
+import Sidebar from "./sidebar";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 

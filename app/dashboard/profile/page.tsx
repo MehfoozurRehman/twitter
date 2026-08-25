@@ -1,6 +1,6 @@
 "use client";
 
-import EditProfileModal from "@/components/EditProfileModal";
+import EditProfileModal from "@/components/edit-profile-modal";
 import Link from "next/link";
 import { useState } from "react";
 
