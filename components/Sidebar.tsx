@@ -155,19 +155,13 @@ export default function Sidebar({ onOpenPostPopup }: SidebarProps) {
 
               <div className="h-px bg-neutral-800 my-1" />
 
-              <button
+              <Link
+                href="/login"
                 onClick={() => setIsAccountMenuOpen(false)}
-                className="w-full text-left px-4 py-3 hover:bg-neutral-900 transition text-sm font-bold text-neutral-100 cursor-pointer"
-              >
-                Add an existing account
-              </button>
-
-              <button
-                onClick={() => setIsAccountMenuOpen(false)}
-                className="w-full text-left px-4 py-3 hover:bg-neutral-900 transition text-sm font-bold text-neutral-100 cursor-pointer"
+                className="block w-full text-left px-4 py-3 hover:bg-neutral-900 transition text-sm font-bold text-neutral-100 cursor-pointer"
               >
                 Log out @mehfooz_dev
-              </button>
+              </Link>
             </div>
           </>
         )}

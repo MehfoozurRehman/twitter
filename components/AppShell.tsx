@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Sidebar from "./Sidebar";
 import RightSidebar from "./RightSidebar";
 import MobileNav from "./MobileNav";
@@ -8,6 +9,15 @@ import PostPopup from "./PostPopup";
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   const [isPostPopupOpen, setIsPostPopupOpen] = useState(false);
+  const pathname = usePathname();
+
+  if (pathname === "/login") {
+    return (
+      <div className="min-h-screen bg-black text-neutral-100 selection:bg-sky-500 selection:text-white font-sans antialiased">
+        {children}
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-black text-neutral-100 selection:bg-sky-500 selection:text-white font-sans antialiased flex justify-center">
