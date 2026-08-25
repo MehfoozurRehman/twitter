@@ -32,7 +32,7 @@ export default function HomeFeed() {
 
       <div className="flex gap-3 px-4 pt-3 pb-3 border-b border-neutral-800">
         <Link
-          href="/profile"
+          href="/dashboard/profile"
           className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-bold text-white shrink-0 text-sm shadow mt-1 cursor-pointer"
         >
           MR
@@ -75,7 +75,7 @@ export default function HomeFeed() {
       </div>
 
       <div className="divide-y divide-neutral-800">
-        <Link href="/post/1" className="block p-4 hover:bg-neutral-950/70 transition duration-200 cursor-pointer">
+        <Link href="/dashboard/post/1" className="block p-4 hover:bg-neutral-950/70 transition duration-200 cursor-pointer">
           <div className="flex gap-3">
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-white shrink-0 text-sm shadow">
               NX
@@ -177,7 +177,7 @@ export default function HomeFeed() {
           </div>
         </Link>
 
-        <Link href="/post/2" className="block p-4 hover:bg-neutral-950/70 transition duration-200 cursor-pointer">
+        <Link href="/dashboard/post/2" className="block p-4 hover:bg-neutral-950/70 transition duration-200 cursor-pointer">
           <div className="flex gap-3">
             <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center font-bold text-white shrink-0 text-sm shadow">
               JS
@@ -277,7 +277,7 @@ export default function HomeFeed() {
           </div>
         </Link>
 
-        <Link href="/post/3" className="block p-4 hover:bg-neutral-950/70 transition duration-200 cursor-pointer">
+        <Link href="/dashboard/post/3" className="block p-4 hover:bg-neutral-950/70 transition duration-200 cursor-pointer">
           <div className="flex gap-3">
             <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-700 flex items-center justify-center font-bold text-white shrink-0 text-sm shadow">
               AL

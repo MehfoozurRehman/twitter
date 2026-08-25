@@ -10,16 +10,16 @@ interface MobileNavProps {
 export default function MobileNav({ onOpenPostPopup }: MobileNavProps) {
   const pathname = usePathname();
 
-  const isHome = pathname === "/";
-  const isExplore = pathname === "/explore";
-  const isNotifications = pathname === "/notifications";
-  const isProfile = pathname === "/profile";
+  const isHome = pathname === "/dashboard";
+  const isExplore = pathname === "/dashboard/explore";
+  const isNotifications = pathname === "/dashboard/notifications";
+  const isProfile = pathname === "/dashboard/profile";
 
   return (
     <>
       <nav className="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-lg border-t border-neutral-800 flex justify-around items-center py-2.5 px-4">
         <Link
-          href="/"
+          href="/dashboard"
           className={`p-2 ${isHome ? "text-white" : "text-neutral-400"}`}
           aria-label="Home"
         >
@@ -32,7 +32,7 @@ export default function MobileNav({ onOpenPostPopup }: MobileNavProps) {
           </svg>
         </Link>
         <Link
-          href="/explore"
+          href="/dashboard/explore"
           className={`p-2 ${isExplore ? "text-white" : "text-neutral-400"}`}
           aria-label="Explore"
         >
@@ -41,7 +41,7 @@ export default function MobileNav({ onOpenPostPopup }: MobileNavProps) {
           </svg>
         </Link>
         <Link
-          href="/notifications"
+          href="/dashboard/notifications"
           className={`p-2 relative ${isNotifications ? "text-white" : "text-neutral-400"}`}
           aria-label="Notifications"
         >
@@ -51,7 +51,7 @@ export default function MobileNav({ onOpenPostPopup }: MobileNavProps) {
           <span className="absolute top-2 right-2 w-2 h-2 bg-sky-500 rounded-full"></span>
         </Link>
         <Link
-          href="/profile"
+          href="/dashboard/profile"
           className={`p-2 ${isProfile ? "text-white" : "text-neutral-400"}`}
           aria-label="Profile"
         >

@@ -1,6 +1,6 @@
 import PostDetailView from "@/components/PostDetailView";
 
-export default async function PostPage({
+export default async function DashboardPostPage({
   params,
 }: {
   params: Promise<{ id: string }>;

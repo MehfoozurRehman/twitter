@@ -1,4 +1,4 @@
-export default function ExplorePage() {
+export default function DashboardExplorePage() {
   return (
     <div>
       <div className="sticky top-0 z-30 bg-black/80 backdrop-blur-md border-b border-neutral-800 flex items-center px-4 h-[53px]">

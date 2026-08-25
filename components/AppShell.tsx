@@ -11,7 +11,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   const [isPostPopupOpen, setIsPostPopupOpen] = useState(false);
   const pathname = usePathname();
 
-  if (pathname === "/login") {
+  if (pathname === "/") {
     return (
       <div className="min-h-screen bg-black text-neutral-100 selection:bg-sky-500 selection:text-white font-sans antialiased">
         {children}

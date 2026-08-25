@@ -12,9 +12,9 @@ export default function ProfileView() {
     <div>
       <div className="sticky top-0 z-30 bg-black/80 backdrop-blur-md border-b border-neutral-800 flex items-center gap-6 px-4 h-[53px]">
         <Link
-          href="/"
+          href="/dashboard"
           className="p-2 hover:bg-neutral-900 rounded-full transition cursor-pointer text-white"
-          aria-label="Back to Home"
+          aria-label="Back to Dashboard"
         >
           <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-current stroke-2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
@@ -116,7 +116,7 @@ export default function ProfileView() {
       </div>
 
       <div className="divide-y divide-neutral-800">
-        <Link href="/post/4" className="block p-4 hover:bg-neutral-950/70 transition duration-200 cursor-pointer">
+        <Link href="/dashboard/post/4" className="block p-4 hover:bg-neutral-950/70 transition duration-200 cursor-pointer">
           <div className="flex items-center gap-2 text-xs text-neutral-500 mb-2 ml-7 font-bold">
             <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current">
               <path d="M16 4v4H8V4h8m2-2H6v8h12V2zm-4 10v6l-2 4-2-4v-6h4z" />

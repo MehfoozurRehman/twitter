@@ -12,17 +12,17 @@ export default function Sidebar({ onOpenPostPopup }: SidebarProps) {
   const [isAccountMenuOpen, setIsAccountMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isHome = pathname === "/";
-  const isExplore = pathname === "/explore";
-  const isNotifications = pathname === "/notifications";
-  const isBookmarks = pathname === "/bookmarks";
-  const isProfile = pathname === "/profile";
+  const isHome = pathname === "/dashboard";
+  const isExplore = pathname === "/dashboard/explore";
+  const isNotifications = pathname === "/dashboard/notifications";
+  const isBookmarks = pathname === "/dashboard/bookmarks";
+  const isProfile = pathname === "/dashboard/profile";
 
   return (
     <header className="sticky top-0 h-screen w-[68px] xl:w-[275px] flex flex-col justify-between px-2 sm:px-3 xl:px-4 py-3 border-r border-neutral-800 shrink-0 select-none z-20">
       <div className="flex flex-col items-center xl:items-start gap-1">
         <Link
-          href="/"
+          href="/dashboard"
           className="p-3 hover:bg-neutral-900 rounded-full w-fit transition-colors duration-200 text-white mb-1 cursor-pointer"
           aria-label="X / Twitter"
         >
@@ -33,7 +33,7 @@ export default function Sidebar({ onOpenPostPopup }: SidebarProps) {
 
         <nav className="flex flex-col gap-0.5 w-full">
           <Link
-            href="/"
+            href="/dashboard"
             className={`flex items-center gap-4 p-3 hover:bg-neutral-900 rounded-full transition-colors duration-200 w-fit xl:w-full group cursor-pointer ${
               isHome ? "font-bold text-white" : "font-normal text-neutral-300"
             }`}
@@ -49,7 +49,7 @@ export default function Sidebar({ onOpenPostPopup }: SidebarProps) {
           </Link>
 
           <Link
-            href="/explore"
+            href="/dashboard/explore"
             className={`flex items-center gap-4 p-3 hover:bg-neutral-900 rounded-full transition-colors duration-200 w-fit xl:w-full group cursor-pointer ${
               isExplore ? "font-bold text-white" : "font-normal text-neutral-300"
             }`}
@@ -61,7 +61,7 @@ export default function Sidebar({ onOpenPostPopup }: SidebarProps) {
           </Link>
 
           <Link
-            href="/notifications"
+            href="/dashboard/notifications"
             className={`flex items-center gap-4 p-3 hover:bg-neutral-900 rounded-full transition-colors duration-200 w-fit xl:w-full group relative cursor-pointer ${
               isNotifications ? "font-bold text-white" : "font-normal text-neutral-300"
             }`}
@@ -76,7 +76,7 @@ export default function Sidebar({ onOpenPostPopup }: SidebarProps) {
           </Link>
 
           <Link
-            href="/bookmarks"
+            href="/dashboard/bookmarks"
             className={`flex items-center gap-4 p-3 hover:bg-neutral-900 rounded-full transition-colors duration-200 w-fit xl:w-full group cursor-pointer ${
               isBookmarks ? "font-bold text-white" : "font-normal text-neutral-300"
             }`}
@@ -88,7 +88,7 @@ export default function Sidebar({ onOpenPostPopup }: SidebarProps) {
           </Link>
 
           <Link
-            href="/profile"
+            href="/dashboard/profile"
             className={`flex items-center gap-4 p-3 hover:bg-neutral-900 rounded-full transition-colors duration-200 w-fit xl:w-full group cursor-pointer ${
               isProfile ? "font-bold text-white" : "font-normal text-neutral-300"
             }`}
@@ -130,7 +130,7 @@ export default function Sidebar({ onOpenPostPopup }: SidebarProps) {
             />
             <div className="absolute bottom-16 left-0 xl:left-2 w-[280px] bg-black border border-neutral-800 rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.12)] py-2 z-30">
               <Link
-                href="/profile"
+                href="/dashboard/profile"
                 onClick={() => setIsAccountMenuOpen(false)}
                 className="flex items-center justify-between px-4 py-3 hover:bg-neutral-900 transition cursor-pointer"
               >
@@ -156,7 +156,7 @@ export default function Sidebar({ onOpenPostPopup }: SidebarProps) {
               <div className="h-px bg-neutral-800 my-1" />
 
               <Link
-                href="/login"
+                href="/"
                 onClick={() => setIsAccountMenuOpen(false)}
                 className="block w-full text-left px-4 py-3 hover:bg-neutral-900 transition text-sm font-bold text-neutral-100 cursor-pointer"
               >

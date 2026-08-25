@@ -234,7 +234,7 @@ export default function PostDetailView({ postId }: { postId: string }) {
     <div>
       <div className="sticky top-0 z-30 bg-black/80 backdrop-blur-md border-b border-neutral-800 flex items-center gap-6 px-4 h-[53px]">
         <Link
-          href="/"
+          href="/dashboard"
           className="p-2 hover:bg-neutral-900 rounded-full transition cursor-pointer text-white"
           aria-label="Back"
         >
