@@ -3,6 +3,7 @@ import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import AppShell from "@/components/AppShell";
+import GoogleAuthProvider from "@/context/google";
 import type { Metadata } from "next";
 
 const geistSans = Geist({
@@ -31,7 +32,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
       <body className="min-h-full bg-black text-white selection:bg-sky-500 selection:text-white">
-        <AppShell>{children}</AppShell>
+        <GoogleAuthProvider>
+          <AppShell>{children}</AppShell>
+        </GoogleAuthProvider>
       </body>
     </html>
   );
