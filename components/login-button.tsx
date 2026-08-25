@@ -13,9 +13,9 @@ export default function LoginButton() {
       onSuccess={(credentialResponse) => {
         console.log(credentialResponse);
 
-        const gogoleAuthValues = jwtDecode(credentialResponse.credential!);
+        const googleAuthValues = jwtDecode(credentialResponse.credential!);
 
-        console.log(gogoleAuthValues);
+        console.log(googleAuthValues);
       }}
       onError={() => {
         console.log("Login Failed");
