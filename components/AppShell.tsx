@@ -1,15 +1,16 @@
 "use client";
 
-import { useState } from "react";
-import { usePathname } from "next/navigation";
-import Sidebar from "./Sidebar";
-import RightSidebar from "./RightSidebar";
 import MobileNav from "./MobileNav";
 import PostPopup from "./PostPopup";
+import RightSidebar from "./RightSidebar";
+import Sidebar from "./Sidebar";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
-  const [isPostPopupOpen, setIsPostPopupOpen] = useState(false);
   const pathname = usePathname();
+
+  const [isPostPopupOpen, setIsPostPopupOpen] = useState(false);
 
   if (pathname === "/") {
     return (
