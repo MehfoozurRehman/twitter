@@ -1,6 +1,14 @@
 import LoginButton from "@/components/login-button";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
-export default function LoginPage() {
+export default async function LoginPage() {
+  const cookie = await cookies();
+
+  const userId = cookie.get("user-id");
+
+  if (userId) redirect("/dashboard");
+
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center p-6 sm:p-12">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24 max-w-[1000px] mx-auto w-full">

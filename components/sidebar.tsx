@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { logout } from "@/actions/logout";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -217,7 +218,10 @@ export default function Sidebar({ onOpenPostPopup }: SidebarProps) {
 
               <Link
                 href="/"
-                onClick={() => setIsAccountMenuOpen(false)}
+                onClick={async () => {
+                  await logout();
+                  setIsAccountMenuOpen(false);
+                }}
                 className="block w-full text-left px-4 py-3 hover:bg-neutral-900 transition text-sm font-bold text-neutral-100 cursor-pointer"
               >
                 Log out @mehfooz_dev
